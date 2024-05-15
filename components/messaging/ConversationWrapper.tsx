@@ -38,7 +38,7 @@ const ConversationWrapper: React.FC<ConversationWrapperType> = ({ userId }) => {
           {showConversationsList ? (
             <ConversationsList />
           ) : (
-            <>
+            <div>
               <button
                 className='self-start'
                 onClick={() => setShowConversationsList(true)}
@@ -46,7 +46,7 @@ const ConversationWrapper: React.FC<ConversationWrapperType> = ({ userId }) => {
                 back
               </button>
               <CurrentConversation />
-            </>
+            </div>
           )}
         </div>
       ) : (
