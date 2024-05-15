@@ -13,7 +13,7 @@ const MobileNavbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className='flex items-center justify-around' role='navigation'>
+    <nav className='flex items-center justify-around py-2' role='navigation'>
       <NavigationLinkContainer
         href='/home-page'
         ariaLabel='Home page'
